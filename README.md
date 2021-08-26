@@ -22,9 +22,14 @@ For this project, we had to build an AI agent to conduct a continous task for ke
 ## Instructions
 
 To run the agent simply follow the instructions in each cell to download dependencies, choose the environment (1 or 20 agents learning together), see the state statistics and take a random action in the environment. To train the agent run the cell with "ddpg" method which is a runner function for the agent. 
+
 Implementation of the agent can be found in file `agent.py` along with hyperparameters and Replay Buffer function. 
-Actor and Critic models can be found in file `model.py`
+
+Actor and Critic models can be found in file `model.py`.
+
 Saved weights for actor and critic network are saved in `actor_checkpoint.pth` and `critic_checkpoint.pth`.
+
+The solution is described in detail in file `Project-report.PDF`.
 
 
 ## Testing the saved model
