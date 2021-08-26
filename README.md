@@ -46,5 +46,6 @@ actions = np.random.randn(num_agents, action_size)
 ```
 to 
 ```
-action = test_agent.act(state)
+actions = test_agent.act(state)
 ```
+the follwing line of code clipping the action values between -1 and 1 is also redundant, since the agent is doing the clipping.
