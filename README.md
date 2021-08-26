@@ -40,4 +40,11 @@ test_agent = Agent(state_size=3, action_size=4)
 test_agent.actor_local.load_state_dict(torch.load('actor_checkpoint.pth'))
 test_agent.critic_local.load_state_dict(torch.load('critic_checkpoint.pth'))
 ```
-and then run cell #5 replacing 
+and then run cell #5 replacing `train_mode=True` to `train_mode=False` and replacing 
+```
+actions = np.random.randn(num_agents, action_size)
+```
+to 
+```
+action = test_agent.act(state)
+```
