@@ -35,7 +35,9 @@ The agent manages to solve the environment in record speed reaching a score grea
 ## Testing the saved model
 
 To test the trained agent using saved weights in files `actor_checkpoint.pth` and `critic_checkpoint.pth` simply run these lines of code:
-'''test_agent = Agent(state_size=3, action_size=4)
+```
+test_agent = Agent(state_size=3, action_size=4)
 test_agent.actor_local.load_state_dict(torch.load('actor_checkpoint.pth'))
-test_agent.critic_local.load_state_dict(torch.load('critic_checkpoint.pth'))'''
-and then run cell #5
+test_agent.critic_local.load_state_dict(torch.load('critic_checkpoint.pth'))
+```
+and then run cell #5 replacing 
