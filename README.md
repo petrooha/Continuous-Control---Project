@@ -19,9 +19,12 @@ For this project, we had to build an AI agent to conduct a continous task for ke
 3. Using pip install the `requirements.txt`
 
 
-## Running the Agent
+## Instructions
 
-Simply start up the notebook and run each cell
+To run the agent simply follow the instructions in each cell to download dependencies, choose the environment (1 or 20 agents learning together), see the state statistics and take a random action in the environment. To train the agent run the cell with "ddpg" method which is a runner function for the agent. 
+Implementation of the agent can be found in file `agent.py` along with hyperparameters. 
+Actor and Critic models can be found in file `model.py`
+Saved weights for actor and critic network are saved in `actor_checkpoint.pth` and `critic_checkpoint.pth`.
 
 ## Solving the Environment
 
