@@ -26,11 +26,6 @@ Implementation of the agent can be found in file `agent.py` along with hyperpara
 Actor and Critic models can be found in file `model.py`
 Saved weights for actor and critic network are saved in `actor_checkpoint.pth` and `critic_checkpoint.pth`.
 
-## Solving the Environment
-
-A single agent was implemented using the D4PG architecture to solve the environment in a parallel manner where the 33 state variables for each of the 20 agents are processed by the neural network in a batched manner in a parallelized fashion taking full advantage of the GPU power available and allowing the timesteps to proceed faster.
-
-The agent manages to solve the environment in record speed reaching a score greater than 30 in 119 episodes. 
 
 ## Testing the saved model
 
