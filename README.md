@@ -31,3 +31,11 @@ Saved weights for actor and critic network are saved in `actor_checkpoint.pth` a
 A single agent was implemented using the D4PG architecture to solve the environment in a parallel manner where the 33 state variables for each of the 20 agents are processed by the neural network in a batched manner in a parallelized fashion taking full advantage of the GPU power available and allowing the timesteps to proceed faster.
 
 The agent manages to solve the environment in record speed reaching a score greater than 30 in 119 episodes. 
+
+## Testing the saved model
+
+To test the trained agent using saved weights in files `actor_checkpoint.pth` and `critic_checkpoint.pth` simply run these lines of code:
+'''test_agent = Agent(state_size=3, action_size=4)
+test_agent.actor_local.load_state_dict(torch.load('actor_checkpoint.pth'))
+test_agent.critic_local.load_state_dict(torch.load('critic_checkpoint.pth'))'''
+and then run cell #5
