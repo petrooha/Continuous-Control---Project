@@ -29,6 +29,8 @@ Actor and Critic models can be found in file `model.py`.
 
 Saved weights for actor and critic network are saved in `actor_checkpoint.pth` and `critic_checkpoint.pth`.
 
+To train the agent allover, please refer to `Continous Control.ipynb`
+
 The solution is described in detail in file `Project report.PDF`.
 
 
